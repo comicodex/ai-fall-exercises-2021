@@ -1,0 +1,40 @@
+### ❓ Missing values
+
+1. What is the missing datatype used in pandas?
+np.nan
+2. How to replace all occurences of the value 9999 to missing in pandas?
+df = df.replace(9999, np.nan)
+3. How to get the absolute number of missings for each variable in pandas?
+df.isna().sum()
+4. How to get the percentage of missings for each variable in pandas?
+df.isna().sum / (len(df)) * 100
+5. How to drop rows with missing values?
+df.dropna(axis=0)
+6. How to drop variables with missing values?
+df.dropna(axis=1)
+7. What is the univariate imputation method in sklearn?
+It's a strategy to impute missing values using statistics (mean, median) of the column with missing values (one feature)
+8. What is the multivariate imputation method in sklearn?
+It's a strategy to impute missing values in function of the other features (variables) and then estimates the imputation
+9. What is the best univariate imputation method to categorical variables? (Explain why)
+SimpleImputer to fill missing values with the most frequent value (strategy=most_frequent)
+10. What is the best univariate imputation method to numerical variables? (Explain why)
+SimpleImputer to fill missing values with the mean (or median) of that feature
+
+### 🔎 Outliers
+
+1. What is an outlier?
+An outlier is a data point that is completely different from other data points (observations)
+2. What is a simple method to detect and deal with outliers of a numerical variable?
+A simple method to detect outliers is to make a plot and then remove them
+3. What is novelty detection?
+It's a method to determine whether new or unusual data are within the norm or are outliers
+4. Name 4 advanced methods of outlier detection in sklearn.
+Robust Covariance, One Class SVM, Isolation Forest, Local Outlier Factor
+
+### 🖋 Typos
+
+1. What is a typo?
+It's a typographical error
+2. What is a good method of automatically detect typos?
+By using a package called fuzzywuzzy
