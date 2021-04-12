@@ -1,10 +1,14 @@
+html {
+      background-image:url(images/pexels-rafael-guajardo-604684.jpg);
+      object-fit:cover;
+}
 body {
       text-align:center;
+      color:white;
 }
 
 h1 {
       color: white;
-      background-color: black;
       margin:0px;
       padding:0px;
 }
